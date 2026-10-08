@@ -40,13 +40,13 @@ html[data-lang="ru"] [lang="de"]{display:none!important}
 .langs button{font:inherit;letter-spacing:.14em;background:none;border:1px solid transparent;color:var(--muted);padding:6px 10px;cursor:pointer;border-radius:2px}
 .langs button[aria-pressed="true"]{border-color:var(--ink);color:var(--ink)}
 
-.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,400px);gap:56px;align-items:end;padding-block:48px 72px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,260px);gap:56px;align-items:end;padding-block:48px 72px}
 .hero h1{font-family:var(--display);font-weight:600;text-transform:uppercase;font-size:clamp(46px,8.4vw,104px);line-height:.92;letter-spacing:-.01em;margin:0 0 28px;text-wrap:balance}
 .hero h1 span{display:block}
 .biz{font-family:var(--accent-serif);font-style:italic;font-size:clamp(22px,2.6vw,30px);line-height:1.25;margin:0 0 22px;color:var(--wine)}
 .lede{max-width:34em;margin:0;color:var(--ink)}
-.portrait{margin:0;width:100%;max-width:400px;justify-self:end}
-.portrait img{display:block;width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;filter:saturate(.9) contrast(1.02)}
+.portrait{margin:0;width:100%;max-width:260px;justify-self:end}
+.portrait img{display:block;width:100%;max-width:100%;aspect-ratio:1/1;max-height:260px;object-fit:cover;object-position:50% 38%;filter:saturate(.9) contrast(1.02)}
 .portrait figcaption{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:10px}
 
 section{padding-block:56px;border-top:1px solid var(--line)}
@@ -67,7 +67,7 @@ section{padding-block:56px;border-top:1px solid var(--line)}
 .pay:hover{background:var(--wine);color:var(--paper)}
 .todo{background:var(--concrete);padding:1px 6px;border-radius:2px;font-weight:600}
 
-.mail{font-family:var(--accent-serif);font-size:clamp(22px,3vw,32px);text-decoration:none;border-bottom:1px solid var(--wine);word-break:break-all}
+.mail{font-family:var(--accent-serif);font-size:clamp(18px,2vw,22px);text-decoration:none;border-bottom:1px solid var(--wine);word-break:break-all}
 .tax{font-size:15px;color:var(--muted);margin-top:22px}
 
 footer{border-top:1px solid var(--line);padding-block:28px 48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:var(--muted)}
@@ -76,7 +76,7 @@ footer a{color:var(--ink)}
 
 @media (max-width:760px){
   .hero{grid-template-columns:1fr;gap:32px;padding-block:24px 48px}
-  .portrait{max-width:340px;justify-self:start}
+  .portrait{max-width:200px;justify-self:start}
   .sec{grid-template-columns:1fr;gap:16px}
   .service{grid-template-columns:1fr}
   .price{text-align:left}
@@ -116,8 +116,8 @@ footer a{color:var(--ink)}
           <h3 lang="ru">Индивидуальная консультация онлайн</h3>
           <p lang="de">Einzeltermin per Zoom zu Ihrem Anliegen.</p>
           <p lang="ru">Встреча один на один в Zoom по вашему запросу.</p>
-          <p class="meta" lang="ru">Время встречи согласуем лично по email. Встречу веду на русском или украинском языке.</p>
-          <p class="meta" lang="de">Den Termin vereinbaren wir individuell per E-Mail. Die Beratung findet auf Russisch oder Ukrainisch statt.</p>
+          <p class="meta" lang="ru">Время встречи согласуем лично по email.<br>Встречу веду на русском или украинском языке.</p>
+          <p class="meta" lang="de">Den Termin vereinbaren wir individuell per E-Mail.<br>Die Beratung findet auf Russisch oder Ukrainisch statt.</p>
         </div>
         <div class="price">
           <div class="amount">60&nbsp;€</div>
@@ -133,8 +133,8 @@ footer a{color:var(--ink)}
     <div class="sec">
       <h2 class="eyebrow"><span lang="de">Zahlung</span><span lang="ru">Как проходит оплата</span></h2>
       <div class="prose">
-        <p lang="de">Die Zahlung erfolgt per Karte über Stripe, vor dem Termin. Nach der Zahlung erhalten Sie von Stripe eine Bestätigung per E-Mail.</p>
-        <p lang="ru">Оплата картой через Stripe, до встречи. После оплаты Stripe пришлёт подтверждение на ваш email.</p>
+        <p lang="de">Die Zahlung erfolgt per Karte über Stripe, vor dem Termin.<br>Nach der Zahlung erhalten Sie von Stripe eine Bestätigung per E-Mail.</p>
+        <p lang="ru">Оплата картой через Stripe, до встречи.<br>После оплаты Stripe пришлёт подтверждение на ваш email.</p>
       </div>
     </div>
   </section>
